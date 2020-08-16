@@ -1,0 +1,13 @@
+.form-header{
+    text-align: center;
+    padding-top:30px;
+    color:  #155724;
+}
+
+.info {
+    text-align: center;
+}
+
+body { 
+  scroll-behavior: smooth;
+}

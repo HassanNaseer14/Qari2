@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% block title %}Register for Online Qari{% endblock %}
+{% block content %}
+<H1 class="form-header">Contact Us</H1>
+<form method="POST">
+{% csrf_token %}
+  <style>
+    body{
+      scroll-behavior: smooth;
+    }
+  </style>
+<div class="container">
+
+<form>
+  <div class="form-group">
+      <label for="exampleFormControlInput1">Full Name</label>
+      <input class="form-control form-control-lg" name="first_name"   type="text" placeholder="Full Name">
+
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" name="from_email" id="exampleFormControlInput1" placeholder="name@example.com">
+    <small>Please make sure you provide an email which is in your use.<a href="#email_info" class="why-email"> See why we ask for your email.</a></small>
+  </div>
+  <div class="form-group">
+
+
+  </div>
+  <div class="form-group">
+
+
+  <div class="form-group">
+
+    <label for="exampleFormControlTextarea1">Age of Student</label>
+    <input class="form-control form-control-lg" name="students" type="number"  min="5"  placeholder="min:5">
+    <small>Note: The Child should atleast be 5 years old to register for Online Qari.</small>
+    <br>
+    <br>
+    <select class="custom-select" name="dropdown">
+      <option selected>Choose a Plan from the following</option>
+      <option value="Pakistan and India">Pakistan and India</option>
+      <option value="USA and UK">USA and UK</option>
+      <option value="Other Countries">Other Countries</option>
+    </select>
+    <br>
+        <label for="exampleFormControlTextarea1">Please mention the name of the country you are from after one of the above plans</label>
+        <input class="form-control form-control-lg" name="country" type="text"  placeholder="Name of your country">
+    <br>
+    <small>Don't know about plans? <a href="{% url 'pricing'%}">Learn here</a></small>
+    <br>
+    <br>
+    <label for="exampleFormControlTextarea1">Phone Number</label>
+    <input class="form-control form-control-lg" name="tel" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ex: +968 9234970">
+    <small>Please include the country code along with the number. </small>
+
+
+    <br>
+
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+</form>
+
+</form>
+
+<br>
+<br>
+<br>
+
+<section id="email_info">
+    <div class="jumbotron ">
+        <h1>Why we ask for your email?</h1>
+        <hr>
+        <br>
+        <p>Your email id is used to contact you for further registration. This process is necessary to ensure that the visitors applying are not bots but actual human-beings. The same goes for your phone numbers. Your data is safe with us and we would never share it elsewhere.</p>
+    </div>
+    
+</section>
+
+
+
+{% endblock %}
