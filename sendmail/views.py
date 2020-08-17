@@ -17,7 +17,7 @@ def contact(request):
             #The Email of the Person williing to register
             from_email = request.POST['from_email']
             try:
-                send_mail("Student Registration","This is a registration request by " + first_name +". Their email-id is " + from_email + ". The age of the the student is:  " + students +  ". Contact information: " + tel +  ". They wish to apply for " + dropdown + " package from " + country , from_email, ['hatechz14@gmail.com','mrssohaib@hotmail.com'] )
+                send_mail("Student Registration","This is a registration request by " + first_name +". Their email-id is " + from_email + ". The age of the the student is:  " + students +  ". Contact information: " + tel +  ". They wish to apply for " + dropdown + " package from " + country , from_email, ['onlineqariteam@gmail.com', 'mrssohaib@hotmail.com'] )
             except BadHeaderError:
                 return HttpResponse("Invalid header found")
             try:
