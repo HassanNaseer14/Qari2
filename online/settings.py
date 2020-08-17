@@ -27,8 +27,8 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '(5y6f)p^vv#kjeljt2!@^5ck_xo!ok$+g-ps@(9wq^v(@oe0u4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['onlineqari.herokuapp.com', 'localhost']
+DEBUG = True
+ALLOWED_HOSTS = []
 
 
 # Application definition
