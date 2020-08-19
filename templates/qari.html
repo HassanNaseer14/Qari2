@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% block title %}
+    View Syllabus of {{qari.name}}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1 class=form-header>{{qari.name}}</h1>
+        <h1 class="form-header"><small>{{qari.days}}</small></h1>
+        <!--This is the table section to view the syllabus-->
+        <br>
+        <br>
+    
+        <table class="table container" style="justify-content:center">
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Timings</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td>{{qari.day1}}</td>
+                    <td>{{qari.timings}}</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Tue</th>
+                    <td>{{qari.day2}}</td>
+                    <td>{{qari.timings}}</td>
+                   
+                </tr>
+                <tr>
+                    <th scope="row">Wed</th>
+                    <td>{{qari.day3}}</td>
+                    <td>{{qari.timings}}</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Thu</th>
+                    <td>{{qari.day4}}</td>
+                    <td>{{qari.timings}}</td>
+                
+                </tr>
+                <tr>
+                    <th scope="row">Fri</th>
+                    <td>{{qari.day5}}</td>
+                    <td>{{qari.timings}}</td>
+                
+                </tr>
+               
+            </tbody>
+        </table>
+        </>
+    </div>
+{% endblock %}

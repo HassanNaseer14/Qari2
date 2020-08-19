@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'sendmail.apps.SendmailConfig',
+    'crispy_forms',
 ]
+
+
+
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -82,8 +86,12 @@ WSGI_APPLICATION = 'online.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dc1o3nnqekvlqa',
+        'USER': 'lsobehcomzmpud',
+        'PASSWORD': 'e4c5cb5d46a720a20e2a7303ff39de73ee7c4bb7b7e81d869069eadc9e1d03c0',
+        'HOST': 'ec2-52-86-116-94.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
@@ -120,7 +128,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -139,5 +147,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "onlineqariteam@gmail.com"
 EMAIL_HOST_PASSWORD = "HkXyxgnrwLKGN5zJ"
 
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 django_heroku.settings(locals())

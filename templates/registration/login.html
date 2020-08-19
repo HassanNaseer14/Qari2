@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Login 
+{% endblock %}
+{% block content %}
+<div class="container">
+        <h1 class="form-header">Login</h1>
+        <br>
+        <br>
+
+        <strong>Please enter the username and password to you by our representative</strong>
+        <br>
+        <br>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy}}
+            <small>Note: Please register first to get a username and password. <a href="/register/contact">Register Now</a></small><br>
+            
+            <button type="submit" class="btn btn-success">Login</button>
+            
+        </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% block title %}
+    View Syllabus and Timings
+{% endblock %}
+{% block content %}
+<h1 class="form-header">View Your Syllaubs as per your qari</h1>
+    {% for qari in object_list %}
+    
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <ul style="list-style-type: none;">
+            <span><li>
+                <h3>{{qari.name}}</h3>
+            </li><a href="{% url 'qari' qari.pk %}"><button class="btn btn-success">View Syllabus </button></a></span>
+            <br>
+            <br>
+            <br>
+        </ul>
+    </div>
+    
+    {% endfor %}
+{% endblock %}
