@@ -1,6 +1,10 @@
+body { 
+  scroll-behavior: smooth;
+  background-color: #cb62ee;
+}
 .form-header{
     text-align: center;
-    padding-top:30px;
+    padding-top:70px;
     color:  #155724;
 }
 
@@ -8,6 +12,4 @@
     text-align: center;
 }
 
-body { 
-  scroll-behavior: smooth;
-}
+
