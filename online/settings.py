@@ -28,7 +28,7 @@ SECRET_KEY = '(5y6f)p^vv#kjeljt2!@^5ck_xo!ok$+g-ps@(9wq^v(@oe0u4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -96,6 +96,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -129,6 +130,7 @@ USE_L10N = True
 USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 

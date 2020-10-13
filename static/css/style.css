@@ -1,0 +1,847 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Poppins, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1b2b45;
+    color: white;
+    animation:drop 1s ease;
+    scroll-behavior: smooth;
+}
+
+input[type = text ]{
+    padding: 12px 20px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+input[type = email ]{
+    padding: 12px 20px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+select{
+    padding: 12px 20px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif ;
+}
+input[type = number ]{
+    padding: 12px 20px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+main{
+    width: 100%;
+}
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform:translateY(-80px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+/* Button */
+
+button{
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+header{
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links
+{
+	display: flex;
+}
+
+
+.logo-container{
+    flex: -1;
+}
+
+nav{
+    flex:2;
+}
+
+.nav-links{
+    justify-content:space-around ;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    
+}
+
+.nav-link:hover{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.presentation{
+    padding-top: 40px;
+    display:flex;
+    width: 90%;
+    min-height: 80vh;
+    margin:auto;
+    margin-top: auto;
+  
+    
+}
+
+.introduction{
+    flex: 1;
+}
+
+.buttons{
+    display: flex;
+    flex: .5;
+   
+
+}
+
+.btn-register{
+    width: 100px;
+    margin-right: 5px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    color:white;
+    
+}
+.btn-pricing{
+    width: 100px;
+    color: #454545;
+    background-color: white;
+    border: none;
+    height: 40px;
+}
+
+.btn-register:hover{
+    transform: translateY(-5px) translateX(-1px);
+    box-shadow:3px 3px  black;
+    transition: .1s ease-in;
+    
+    
+}
+
+
+.btn-pricing:hover{
+    transform: translateY(-5px) translateX(-1px);
+    box-shadow:3px 3px  black;
+    transition: .1s ease-in;
+    
+}
+
+
+.introduction{
+    padding-top: 80px;
+    padding-left: 80px;
+    
+}
+
+
+
+.buttons{
+    display: flex;
+    padding-top: 80px;
+    padding-left: 80px;
+  
+    
+}
+
+.services{
+    width: 90%;
+    /*background-color: blue;*/
+    box-shadow: 2px  black;
+    margin: auto;
+    height: 75vh;
+    
+}
+
+
+
+.service-text h1{
+    text-align: center;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+.services-list{
+    display:flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+   
+}
+
+.services-list li{
+    margin:20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+@media screen and (max-width:632px){
+
+   
+    
+    
+    .presentation{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    .buttons{
+        display: flex;
+        padding-top: 0px;
+        justify-content: center;
+    }
+
+    .logo-container{
+      
+        
+    padding-left: 15%;
+    
+    
+    }
+
+    .logo{
+       
+        font-size: 20px;
+    }
+
+    nav{
+        display: none;
+        
+    }
+
+    .nav-link{
+        font-size:13px;
+    }
+    .services{
+        justify-content: center;
+    }
+
+    .burger{
+       
+        cursor: pointer;
+        z-index: 2;
+        position: relative;
+        left: 5%;
+    
+    }
+    .nav-links {
+        position: fixed;
+        background: #1b2b45;;
+        height: 50vh;
+        width: 40%;
+        left: 2%;
+        flex-direction: column;
+        top: 5%;
+        transition: all 1s ease;
+        padding: 0px;
+        color: white;
+        box-shadow: 2px 2px black;
+      }
+
+
+    .line1{
+        width:20px;
+        height: 5px;
+        background-color: white;
+        border-radius: 5px 5px 5px 5px;
+        margin: 2px;
+    }
+    .line2{
+        width:20px;
+        height: 5px;
+        background-color: white;
+        border-radius: 5px 5px 5px 5px;
+        margin: 2px;
+        
+    }
+    .line3{
+        width:20px;
+        height: 5px;
+        background-color: white;
+        border-radius: 5px 5px 5px 5px;
+        margin: 2px;
+    }
+
+    .change{
+       display: flex;
+        flex-direction: column;
+
+        
+    
+        
+    }
+
+    .nav-links .change{
+        pointer-events: all;
+        transition: all 1s ease;
+        
+        
+    }
+
+    .nav-change{
+        animation: appear .3s ease-out;
+
+    }
+
+ 
+
+    @keyframes appear {
+        0%{
+            opacity: 0px;
+            transform: translateY(-10px) translateX(-20px)
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px) translateX(0px)
+        }
+    }
+
+
+
+    
+
+   
+    
+}
+
+@media screen and (max-width: 700px){
+    .buttons{
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .introduction{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px){
+    .presentation{
+        width: 80%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    .introduction{
+        padding-left: 0px;
+    }
+    
+    .buttons{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* Pricing Page CSS and Media Queries */ 
+
+.pricing{
+    padding-top: 5%;
+    
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+}
+
+.containers{
+    float: left;
+    width: 20%;
+    height: 50vh;
+    margin-right: 10%;
+    margin-left: 10% ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.containers h4{
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #1b2b45;
+    background: white;
+    height: 10vh;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px rgba(99, 96, 96, 0.432) solid ;
+
+}
+
+.containers h1{
+    
+    color: #1b2b45;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40vh;
+    font-size: 65px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+.containers2{
+    float: left;
+    width: 20%;
+    height: 50vh;
+    margin-right: 10%;
+    
+   
+}
+
+.containers2 h4{
+      border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: blue;
+    height: 10vh;
+    color: #1b2b45;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px rgba(99, 96, 96, 0.432) solid ;
+
+}
+
+.containers2 h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b2b45;
+    background: white;
+    height: 40vh;
+    font-size: 65px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.containers3{
+    float: left;
+    width: 20%;
+    height: 50vh;
+    margin-right: 30px;
+    border-radius: 20px;
+   
+}
+
+.containers3 h4{
+    color: #1b2b45;
+    background: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 1px rgba(99, 96, 96, 0.432) solid ;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.containers3 h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b2b45;
+    background: white;
+    height: 40vh;
+    font-size: 65px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .containers, .containers2, .containers3{
+        width: 100%;
+        margin: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+/* CSS for the Registration Page */ 
+
+.registration-form{
+    width: 90%;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    
+ 
+    margin: auto;
+}
+
+.form-container{
+    width: 100%;
+    color: #1b2b45;
+    background-color: white;
+    height: 100vh;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.header-register h1{
+    display: flex;
+    background-color: hotpink;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #1b2b45;
+    background-color: white;
+    border-bottom: #1b2b45 1px solid ;
+}
+
+.input{
+    padding-top: 10px;
+    
+}
+
+.input input{
+    border: 1px solid rgba(121, 121, 121, 0.178);
+    width:80%;
+    margin: auto;
+    height: 7%;
+    font: Helvetica;
+}
+
+.input select{
+    border: 1px solid rgba(121, 121, 121, 0.178);
+    width:80%;
+    margin: auto;
+    height: 7%;
+    font: Helvetica;
+}
+
+
+.btn-submit{
+    width: 100px;
+    background-color: #1b2b45;
+    color: white;
+    border: white 1px ;
+    height: 40px;
+    font-family: Poppins, Helvetica;
+    margin: 10px;
+}
+
+.btn-submit:hover{
+    transform: translateY(-5px) translateX(-1px);
+    box-shadow:3px 3px  black;
+    transition: .1s ease-in;
+    
+
+}
+
+
+@media screen and (max-width:1100px){
+    .form-container{
+        width:100%;
+    }
+}
+
+.select option{
+    font-family: Poppins, Helvetica;
+}
+
+
+/* CSS for the login page */
+
+
+
+.login-form{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.login-container{
+    width: 50%;
+    color: #1b2b45;
+    background-color: white;
+    height: 65%;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+
+.login-container input{
+    height:9%;
+}
+
+
+.header-login h1{
+    border-bottom: 1px #1b2b45 solid ;
+    height: 10vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .login-container{
+        width: 90%;
+       
+
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .note{
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+.home-tution{   
+    width: 90%; 
+    margin: auto; 
+    padding-top: 17%
+    
+}
+
+.tution-header h1{
+    text-align: center;
+}
+
+
+.tution-content{
+    width: 90%;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
+   
+}
+
+.plans{
+    
+    text-decoration: underline;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    background-color: white;
+    color: #1b2b45 ;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    
+}
+
+
+
+
+
+.qari-list{
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    border: 3px solid white;
+
+}
+
+.page-header h1{
+    text-align: center;
+    margin:10px;
+}
+
+.qari-container{
+    display: flex;
+}
+
+.qari-content{
+    flex: 1;
+}
+
+
+
+.qari-content ul span{
+    display: flex;
+    margin: 10%;
+}
+
+.qari-content ul span li {
+    flex: 1;
+}
+
+.btn-syllabus{
+    height: 5vh;
+    width: 20vh;
+    font-family: Poppins, sans-serif;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-syllabus:hover{
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 3px 3px  black ;
+    font-weight: bold;
+    transition: 0.1s ease-in;
+}
+
+.whatsapp-register{
+    width: 90%;
+
+    margin: auto;
+    position: relative;
+    top: 15%;
+    height:20%;
+    color: white;
+   
+
+}
+
+.whatsapp-header{
+    text-align: center;
+}
+
+.whatsapp-content{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.payment{
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    position: relative;
+    top: 6%;
+    height: 20vh;
+    
+}
+
+.payment-header{
+    text-align: center;
+}
+
+.payment-content{
+    padding-top: 2%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .whatsapp-register{
+        height: 80%;
+    }
+   
+}
+
+
+.btn-submit-register{
+    
+        width: 100px;
+        background-color: #1b2b45;
+        color: white;
+        border: white 1px ;
+        height: 40px;
+        font-family: Poppins, Helvetica;
+        margin: 10px;
+    
+}
+
+.login-fields{
+    width: 80%;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.login-container h1{
+    border-bottom: solid darkslategray;
+}
+
+.input-container{
+    
+    height: 50%;
+    margin: auto 0px;
+}
+
+.qari_header{
+    text-align: center;
+}
+
+.table_container{
+    color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 80%;
+    margin: auto;
+    
+}
+
+table{
+    flex: 1;
+}
+
+table tbody td{
+    text-align: center;
+    padding: 10px; 
+}
+
+
+.table thead th{
+    border-bottom: solid white 2px;
+}
+
+.username:hover{
+    font-weight: normal;
+    cursor: unset;
+}

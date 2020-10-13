@@ -1,19 +1,12 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 {% block title %}
-    Success Sending the Email
+    Success!
 {% endblock %}
-{% block content %}
-
-<br>
-<br>
-
-<div class="container">
-    <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Your registration request was sent.</h4>
-      <p>Your registration request has been sent. Our representative will contact you shortly for a confirmation and further registration. After your details and registration have been confirmed, our representative will provide you with a username and passsord which you will you use to login and view your syllabus as per your Qari </p>
-      <hr>
-      <p class="mb-0">Thank You!</p>
-      <a  class="btn btn-primary"  href="/">Go Back!</a>
+{% block content%}
+    <div class="success-container">
+        <div class="success">
+            <h1></h1>
+            <p></p>
+        </div>
     </div>
-</div>
 {% endblock %}

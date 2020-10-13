@@ -1,119 +1,38 @@
 {% extends 'base.html' %}
-{% block title %}
-Pricing Info
-{% endblock %}
+{% block title %}Pricing Plans{% endblock%}
 {% block content %}
-<style>
-    /* Create three columns of equal width */
-    .columns {
-        float: left;
-        width: 33.3%;
-        padding: 8px;
-    }
+<main>
+    <section class="pricing">
+        <div class="containers">
+            
+            <h4>For Pakistan and India</h4>
+            <h1>$15</h1>
+            
+        </div>
 
-    /* Style the list */
-    .price {
-        list-style-type: none;
-        border: 1px solid #eee;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
+        <div class="containers2">
+            
+            <h4>For Other Countries</h4>
+            <h1>$30</h1>
+            
+        </div>
 
-    /* Add shadows on hover */
-    .price:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-    }
+        <div class="containers3">
+            
+            <h4>For Home Tution</h4>
+            <h1>$35
+            </h1>
+            
+        </div>
 
-    /* Pricing header */
-    .price .header {
-        background-color: #111;
-        color: white;
-        font-size: 25px;
-    }
+        
 
-    /* List items */
-    .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-    }
+    </section>
 
-    /* Grey list item */
-    .price .grey {
-        background-color: #eee;
-        font-size: 20px;
-    }
+    <br> 
+    <br>
 
-    /* The "Sign Up" button */
-    .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 10px 25px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 18px;
-    }
-
-    /* Change the width of the three columns to 100%
-(to stack horizontally on small screens) */
-    @media only screen and (max-width: 600px) {
-        .columns {
-            width: 100%;
-        }
-    }
-</style>
-
-    <div class="columns">
-        <ul class="price">
-            <li class="header bg-success">For Pakistan and India</li>
-            <li><h2>Syllabus</h2></li>
-            <li class="grey">$ 15.99/ month</li>
-            <li class="bg-secondary">3-day trial with no Payment required </li>
-            <li class="bg-success">Nazra</li>
-            <li class="bg-primary">Kalma</li>
-            <li class="bg-warning">Salah (Namaz)</li>
-            <li class="bg-danger">Beautiful Supplications</li>
-            <li class="grey"><a href="/register/contact" class="btn btn-success">Sign Up</a></li>
-        </ul>
-    </div>
-
-    <div class="columns">
-        <ul class="price">
-            <li class="header bg-primary">For USA & UK</li>
-            <li>
-                <h2>Syllabus</h2>
-            </li>
-            <li class="grey">$ 40 / month</li>
-            <li class="bg-secondary">3-day trial with no Payment required </li>
-            <li class="bg-success">Nazra</li>
-            <li class="bg-primary">Kalma</li>
-            <li class="bg-warning">Salah (Namaz)</li>
-            <li class="bg-danger">Beautiful Supplications</li>
-            <li class="grey"><a href="/register/contact" class="btn btn-success">Sign Up</a></li>
-        </ul>
-    </div>
-
-    <div class="columns">
-        <ul class="price">
-            <li class="header bg-danger">For Other Countries</li>
-            <li>
-                <h2>Syllabus</h2>
-            </li>
-            <li class="grey">$ 30.99/ month</li>
-            <li class="bg-secondary">3-day trial with no Payment required </li>
-            <li class="bg-success">Nazra</li>
-            <li class="bg-primary">Kalma</li>
-            <li class="bg-warning">Salah (Namaz)</li>
-            <li class="bg-danger">Beautiful Supplications</li>
-            <li class="grey"><a href="/register/contact" class="btn btn-success">Sign Up</a></li>
-        </ul>
-    </div>
-
-
-
+</main>
 
 
 {% endblock %}

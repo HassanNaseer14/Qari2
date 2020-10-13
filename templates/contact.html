@@ -1,86 +1,70 @@
 {% extends 'base.html'%}
 {% block title %}Register for Online Qari{% endblock %}
 {% block content %}
-<br>
-<br>
-<h1 class="form-header">Contact Us</h1>
-<br>
-<br>
-
-<form method="POST">
-{% csrf_token %}
-  <style>
-    body{
-      scroll-behavior: smooth;
-    }
-  </style>
-<div class="container">
-
-<form>
-  <div class="form-group">
-      <label for="exampleFormControlInput1">Full Name</label>
-      <input class="form-control form-control-lg" name="first_name"   type="text" placeholder="Full Name">
-
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" name="from_email" id="exampleFormControlInput1" placeholder="name@example.com">
-    <small>Please make sure you provide an email which is in your use.</small>
-  </div>
-  <div class="form-group">
+<main>
+    <section class="registration-form">
+        <div class="form-container">
+            <div class="header-register">
+                <h1>Register for Online Qari</h1>
 
 
-  </div>
-  <div class="form-group">
+            </div>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="input">
+                    <label for="text">Full Name:</label>
+                    <br>
 
+                    <input type="text" name="first_name"  placeholder="Full Name">
+                    <br><br><label for="text">Choose a Plan:</label>
+                    <br>
 
-  <div class="form-group">
+                    <select name="dropdown" class="select" required>
 
-    <label for="exampleFormControlTextarea1">Age of Student</label>
-    <input class="form-control form-control-lg" name="students" type="number"  min="5"  placeholder="min:5">
-    <small>Note: The Child should atleast be 5 years old to register for Online Qari.</small>
-    <br>
-    <br>
-    <select class="custom-select" name="dropdown">
-      <option selected>Choose a Plan from the following</option>
-      <option value="Pakistan and India">Pakistan and India</option>
-      <option value="USA and UK">USA and UK</option>
-      <option value="Other Countries">Other Countries</option>
-    </select>
-    <br>
-        <label for="exampleFormControlTextarea1">Please mention the name of the country you are from after you choose one of the above plans</label>
-        <input class="form-control form-control-lg" name="country" type="text"  placeholder="Name of your country">
-    <br>
-    <small>Don't know about plans? <a href="{% url 'pricing'%}">Learn here</a></small>
-    <br>
-    <br>
-    <label for="exampleFormControlTextarea1">WhatsApp Number</label>
-    <input class="form-control form-control-lg" name="tel" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ex: +968 9234970">
-    <small>Please include the country code along with the number. </small>
+                        <option value="Pakistan and India">For Pakistan and India</option>
 
+                      <option value="Other Countries">For Other Countries</option>
+                        <option value="Home Tution">For Home Tution</option>
+                        <option selected>Choose a Plan</option>
+                    </select>
 
-    <br>
+                    <br><br><label for="text">Age of Student:</label>
+                    <br>
+                    <input type="number" name="students" min="5" placeholder="min: 5">
 
+                    <br><br><label for="email">Email Address:</label>
+                    <br>
+                    <input type="email" name="from_email" placeholder="Email eg: example@example.com"  >
 
+                    <br><br><label for="text">Whatsapp Number:</label>
+                    <br>
+                    <input type="text" placeholder="Whatsapp Number eg: +92 12345678" name="tel" id="">
+                    <br>
 
-    <button type="submit" class="btn btn-success">Submit</button>
-  </div>
-</form>
+                    <br><label for="text">Name of your country:</label>
+                    <br>
+                    <input type="text" placeholder="Name of your Country" name="country" id="">
+                
 
-</form>
+                    <button class='btn-submit-register' type="submit">Sumbit</button>
+                    <br>
+                </div>
+            </form>
+            </div>
+    </section>
 
-<br>
-<br>
-<br>
-
-<section id="email_info">
-    <div class="jumbotron ">
-        <h1>Want to register through Whatsapp or Call?</h1>
-        <hr>
-        <br>
-        <p>If you wish to register throught Whatsapp, contact as at +92 346 2332261. </p>
-    </div>
     
+
+</main>
+
+<section class="whatsapp-register">
+    <div class="whatsapp-container">
+    <div class="whatsapp-header">
+        <h1>Want to register through Whatsapp or Call?</h1>
+    </div>
+    <div class="whatsapp-content">
+        <p>If you wish to register through Whatsapp or Call, contact us at: +92 3462332261, and start your journey with Online Qari. Do note that your information is completely safe with us no matter what method you choose to register.</p>
+    </div>
+</div>
 </section>
-
-
-
 {% endblock %}

@@ -1,26 +1,29 @@
-{% extends 'base.html' %}
-{% load crispy_forms_tags %}
+{% extends 'base.html'%}
 
-{% block title %}
-    Login 
-{% endblock %}
+{% block title %}Login{% endblock %}
 {% block content %}
-<div class="container">
-        <h1 class="form-header">Login</h1>
+<div class="login-form">
+    
+<form class="login-container"method="POST"`class="login-form">
+    <h1>Login</h1>
+    {% csrf_token %}
+    <br>
+    
+    <div class="input-container">
+    <label for="{{ form.username.id_for_label }}">Username:</label><br/>
+    {{form.username}}
+    {{form.username.errors}}
         <br>
-        <br>
+    <br>
+    <label for="{{ form.password.id_for_label }}">Password:</label><br/>
+    {{ form.password }}
+    {{ form.password.errors }}
+</div>
 
-        <strong>Please enter the username and password given to you by our representative!</strong>
-        <br>
-        <br>
-        <form method="post">
-            {% csrf_token %}
-            {{ form|crispy}}
-            <small>Note: Please register first to get a username and password. <a href="/register/contact">Register Now</a></small><br>
-            
-            <button type="submit" class="btn btn-success">Login</button>
-            
-        </form>
+    <button class="btn-submit" type="submit">Sumbit</button>
+                 
+
+</form>
 </div>
 
 {% endblock %}
