@@ -13,6 +13,19 @@ body{
     scroll-behavior: smooth;
 }
 
+::-moz-selection{
+    color: #1b2b45;
+    background-color: white;
+}
+
+
+::selection{
+    color: white;
+    background-color: rgb(11, 8, 41);
+}
+
+
+
 input[type = text ]{
     padding: 12px 20px;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif ;
